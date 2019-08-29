@@ -91,7 +91,7 @@
 					</table>
 				</div>
 				<div id="footer">
-					<a href="https://dearjohn.cn" target="_blank"></a>
+					<a href="https://ray8.cc" target="_blank">Raymond9zhou</a>
 				</div>
 			</body>
 		</html>

@@ -32,7 +32,7 @@ class Sitemap_Action extends Typecho_Widget implements Widget_Interface_Do
 			echo "\t\t<loc>".$page['permalink']."</loc>\n";
 			echo "\t\t<lastmod>".date('Y-m-d',$page['modified'])."</lastmod>\n";
 			echo "\t\t<changefreq>always</changefreq>\n";
-			echo "\t\t<priority>0.8</priority>\n";
+			echo "\t\t<priority>0.6</priority>\n";
 			echo "\t</url>\n";
 		}
 		foreach($articles AS $article) {
@@ -56,7 +56,7 @@ class Sitemap_Action extends Typecho_Widget implements Widget_Interface_Do
 			echo "\t\t<loc>".$article['permalink']."</loc>\n";
 			echo "\t\t<lastmod>".date('Y-m-d',$article['modified'])."</lastmod>\n";
 			echo "\t\t<changefreq>always</changefreq>\n";
-			echo "\t\t<priority>0.5</priority>\n";
+			echo "\t\t<priority>0.8</priority>\n";
 			echo "\t</url>\n";
 		}
 		echo "</urlset>";

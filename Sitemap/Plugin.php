@@ -1,11 +1,11 @@
 <?php
 /**
- * Sitemap
+ * 生成Sitemap 符合Google和百度标准
  * 
  * @package Sitemap
- * @author John
- * @version 1.0.0
- * @link https://dearjohn.cn
+ * @author jozhn
+ * @version 1.1.0
+ * @link https://jozhn.com
  *
  */
 class Sitemap_Plugin implements Typecho_Plugin_Interface
@@ -17,9 +17,8 @@ class Sitemap_Plugin implements Typecho_Plugin_Interface
      * @return void
      * @throws Typecho_Plugin_Exception
      */
-    public static function activate()
-    {
-		Helper::addRoute('sitemap', '/sitemap.xml', 'Sitemap_Action', 'action');
+    public static function activate(){
+	    Helper::addRoute('maproute', '/sitemap.xml', 'Sitemap_Action', 'action');
     }
     
     /**
@@ -30,10 +29,9 @@ class Sitemap_Plugin implements Typecho_Plugin_Interface
      * @return void
      * @throws Typecho_Plugin_Exception
      */
-    public static function deactivate()
-	{
-		Helper::removeRoute('sitemap');
-	}
+    public static function deactivate(){
+	    Helper::removeRoute('maproute');
+    }
     
     /**
      * 获取插件配置面板
